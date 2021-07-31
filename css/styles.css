@@ -1,0 +1,517 @@
+/*
+*{
+    display: inline-block;
+}*/
+body {
+  background-color: rgb(245, 240, 241);
+  margin-top: 0px;
+}
+
+.logo {
+  width: 25%;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #986a81;
+  /* position: fixed; */
+  width: 100%;
+}
+
+nav {
+  width: 73%;
+  padding: 1%;
+  display: inline-block;
+}
+
+nav ul {
+  width: 100%;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  font-size: large;
+}
+
+nav li {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 14px;
+  text-decoration: none;
+
+  list-style-type: none;
+  margin: 0 0 0 10px;
+  color: white;
+  /* float:left; */
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+nav li :hover {
+  color: black;
+  text-shadow: white;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.heroimg {
+  /* height: 600px; */
+  /* padding: 25px; */
+  background-color: rgb(245, 240, 241);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+}
+.heroimg img {
+  width: 500px;
+  background-color: white;
+  box-shadow: -50px 50px #ace2e4;
+  z-index: 10;
+  float: right;
+}
+
+.content {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.Name {
+  color: #633049;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.description {
+  font-size: large;
+  font-weight: 700;
+}
+
+.socialimage {
+  height: 25px;
+  width: 25px;
+  padding-left: 10px;
+}
+
+.connect {
+  align-items: center;
+  display: flex;
+}
+
+  footer {
+  background-color: #373738;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: left;
+}
+
+footer ul {
+  width: 50%;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer li {
+  padding: center;
+  list-style-type: none;
+  margin: 0 0 0 10px;
+  color: white;
+}
+
+.header {
+  grid-area: header;
+}
+.Image {
+  grid-area: Image;
+  margin-right: 40px;
+  background-color: #fff0fa;
+}
+.Intro {
+  grid-area: Intro;
+  margin-left: 40px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 30px;
+  background-color: #fff0fa;
+}
+.MySkills {
+  grid-area: MySkills;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 50px;
+}
+.MyWork {
+  grid-area: MyWork;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.footer {
+  grid-area: footer;
+}
+
+.grid-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "Intro Intro Intro Image Image Image "
+    "MySkills MySkills MySkills MySkills MySkills MySkills"
+    "MyWork MyWork MyWork MyWork MyWork MyWork"
+    "footer footer footer footer footer footer";
+  /* grid-gap: 10px; */
+  padding: 10px;
+  grid-column-gap: 0px;
+  /* padding-top: 100px; */
+}
+
+.Intro p {
+  margin: 5px;
+}
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #b8cadf;
+}
+
+.button1:hover {
+  background-color: #b8cadf;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #add5db;
+}
+
+.button2:hover {
+  background-color: #add5db;
+  /* color: white; */
+}
+
+.button3 {
+  background-color: white;
+  color: black;
+  border: 2px solid #a1cee9;
+}
+
+.button3:hover {
+  background-color: #a1cee9;
+}
+
+.button4 {
+  background-color: #986a81;
+  color: white;
+  border: 2px solid #986a81;
+}
+
+.button4:hover {
+  background-color: #986a81;
+  color: white;
+}
+
+.skillscontainer {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.MySkills h1 {
+  text-align: left;
+}
+
+.Box1 {
+  width: 500px;
+  margin: 10px;
+  border-bottom: solid 5px #ace2e4;
+  border-left: solid 5px #ace2e4;
+  padding: 60px;
+  /* height: 100px; */
+  /* border-radius: 0 10 10 10px; */
+  text-align: center;
+  /* box-shadow: -10px 20px #986A81; */
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(245, 240, 241),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.Box2 {
+  width: 500px;
+  margin: 10px;
+  border-top: solid 5px #ace2e4;
+  border-right: solid 5px #ace2e4;
+  padding: 60px;
+  /* border-radius: 10 10 0 10px; */
+  text-align: center;
+  /* box-shadow: 10px -20px #986A81; */
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(245, 240, 241),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.Box h3 {
+  text-align: center;
+}
+
+.Box1 p {
+  word-spacing: 8px;
+}
+
+.Box2 p {
+  word-spacing: 8px;
+}
+
+.WorkGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "image1 image1 image1 info1 info1"
+    "info2 info2 image2 image2 image2"
+    "image3 image3 image3 info3 info3";
+  grid-gap: 10px;
+  grid-row-gap: 20px;
+  padding: 10px;
+}
+
+.WorkImage1 {
+  background-color: #b8cadf;
+  text-align: center;
+  padding: 40px;
+}
+
+.Picture1 {
+  height: 300px;
+  width: 500px;
+}
+
+.WorkImage2 {
+  background-color: #add5db;
+  padding: 40px;
+  text-align: center;
+}
+
+.Picture2 {
+  height: 300px;
+  width: 500px;
+}
+.WorkImage3 {
+  background-color: #a1cee9;
+  padding: 40px;
+  text-align: center;
+}
+
+.Picture3 {
+  height: 300px;
+  width: 500px;
+}
+
+.WorkImage1 {
+  grid-area: image1;
+}
+.BoxW1 {
+  grid-area: info1;
+}
+.WorkImage2 {
+  grid-area: image2;
+}
+.BoxW2 {
+  grid-area: info2;
+}
+.WorkImage3 {
+  grid-area: image3;
+}
+.BoxW3 {
+  grid-area: info3;
+}
+.BoxW {
+  text-align: center;
+  padding-top: 30px;
+}
+footer {
+  background-color: #986a81;
+  width: 100%;
+  margin-top: 50px;
+  height: 250px;
+  font-size: large;
+}
+.footerList1 {
+  width: 40%;
+  display: inline-block;
+  list-style: none;
+  text-align: start;
+  color: white;
+  margin-top: 20px;
+  margin-left: 5%;
+}
+.footerList2 {
+  width: 41%;
+  display: inline-block;
+  list-style: none;
+  text-align: end;
+  margin-top: 20px;
+  margin-right: 5%;
+}
+.footer1element {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.footer2element {
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footerIcons {
+  float: right;
+  text-align: end;
+  width: 15%;
+  justify-content: space-between;
+  margin-right: 8%;
+}
+.copyrightText {
+  color: white;
+  margin-left: 8%;
+  padding-bottom: 20px;
+}
+.footerText:hover {
+  color: black;
+  text-shadow: white;
+  font-weight: bolder;
+  font-size: larger;
+}
+/* .subtitle {
+      width: 40%;
+      border-bottom: groove 3px black;
+      padding-bottom: 20px;
+  } */
+
+.Title {
+  font-size: large;
+}
+html {
+  scroll-behavior: smooth;
+}
+.fadeonload {
+  position: absolute;
+}
+
+@media (max-width: 800px) {
+  .Title {
+    color: midnightblue;
+  }
+  .grid-container {
+    grid-template-areas:
+      "header header header header header header"
+      "Image Image Image Image Image Image"
+      "Intro Intro Intro Intro Intro Intro"
+      "MySkills MySkills MySkills MySkills MySkills MySkills"
+      "MyWork MyWork MyWork MyWork MyWork MyWork"
+      "footer footer footer footer footer footer";
+  }
+  .WorkGrid {
+    grid-template-areas:
+      "image1 image1 image1 image1 image1 image1"
+      "info1 info1 info1 info1 info1 info1"
+      "image2 image2 image2 image2 image2 image2"
+      "info2 info2 info2 info2 info2 info2"
+      "image3 image3 image3 image3 image3 image3"
+      "info3 info3 info3 info3 info3 info3";
+    grid-row-gap: 10px;
+  }
+  .Box {
+    padding-top: 1px;
+    padding-bottom: 20px;
+  }
+  .heroimg img {
+    width: 300px;
+    height: 300px;
+  }
+  nav {
+    padding: 0px;
+  }
+  nav li {
+    padding: 5px;
+  }
+  nav ul {
+    padding-inline-start: 0px;
+  }
+  .fadeonload {
+    position: static;
+    margin-top: 30px;
+  }
+  .skillscontainer {
+    display: block;
+    padding: 10px;
+  }
+  .Box1 {
+    width: 100%;
+    padding: 10px;
+  }
+  .Box2 {
+    width: 100%;
+    padding: 10px;
+  }
+  .Picture1 {
+    height: 200px;
+    width: 300px;
+  }
+  .WorkImage1 {
+    padding: 20px;
+  }
+  .Picture2 {
+    height: 200px;
+    width: 300px;
+  }
+  .WorkImage2 {
+    padding: 20px;
+  }
+  .Picture3 {
+    height: 200px;
+    width: 300px;
+  }
+  .WorkImage3 {
+    padding: 20px;
+  }
+  .footerList1 {
+    width: 80%;
+    margin-left: 0px;
+  }
+  .footerList2 {
+    width: 80%;
+  }
+  .footerIcons {
+    display: flex;
+    flex-direction: row;
+    /* float: none; */
+    padding-inline-start: 40px;
+    padding-top: 17px;
+  }
+  .footerText {
+    float: left;
+  }
+  .copyrightText {
+    padding-inline-start: 10px;
+  }
+}
